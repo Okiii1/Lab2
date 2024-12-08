@@ -1,0 +1,63 @@
+/* Home.css */
+.home-container {
+    font-family: Arial, sans-serif;
+  }
+  
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://img.pikbest.com/wp/202403/income-calculation-money-and-coins-calculator-a-visual-representation-of-tracking-expenses_9824020.jpg!w700wp");
+  background-size: cover; /* Kjo e mbulon tërë seksionin me imazhin */
+  background-repeat: no-repeat; /* Kjo parandalon përsëritjen e imazhit */
+  background-position: center; /* Qendron imazhi në qendër të seksionit */
+  color: #ffffff;
+  min-height: 80vh;
+  padding: 40px;
+}
+
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .explore-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #764ba2;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #fffeee;
+    transform: translateY(-3px);
+  }
+  .additional-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #f0f0f0;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
