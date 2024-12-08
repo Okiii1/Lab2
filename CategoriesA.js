@@ -14,8 +14,8 @@ const Categories = () => {
   useEffect(() => {
     const userRoleId = parseInt(localStorage.getItem('userRoleId'), 10); 
 
-    if (userRoleId === 0 || userRoleId === 1) {
-      navigate('/login'); 
+    if (userRoleId !== 1) { 
+        navigate('/login'); 
     } else {
       loadCategories();
     }
