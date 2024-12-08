@@ -3,6 +3,9 @@ import { Table, Form, Button, Modal, Alert } from 'react-bootstrap';
 import API from '../services/api';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom'; 
+
+
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -10,10 +13,17 @@ const Users = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null);
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
-    loadUsers();
-  }, []);
+    const userRoleId = parseInt(localStorage.getItem('userRoleId'), 10); 
+
+    if (userRoleId !== 1) { 
+      navigate('/login'); 
+    } else {
+      loadUsers();
+    }
+  }, [navigate]);
 
   const loadUsers = async () => {
     try {

@@ -27,12 +27,17 @@ const Navbar = () => {
 
   const adminNavItems = [
     { path: '/Home', label: 'Home' },
-    { path: '/Categories', label: 'Categories' },
-    { path: '/Expenses', label: 'Expenses' },
-    { path: '/Budgets', label: 'Budgets' },
-    { path: '/Incomes', label: 'Incomes' },
+    { path: '/CategoriesA', label: 'Categories' },
+    { path: '/ExpensesA', label: 'Expenses' },
+    { path: '/BudgetsA', label: 'Budgets' },
+    { path: '/IncomesA', label: 'Incomes' },
     { path: '/Contact', label: 'Contact' },
     { path: '/Users', label: 'Users' },
+    { path: '/Liga', label: 'Liga' },  
+    { path: '/Ekipi', label: 'Ekipi' },
+    { path: '/Departament', label: 'Departament' },
+    
+
   ];
 
   const userNavItems = [
@@ -42,6 +47,7 @@ const Navbar = () => {
     { path: '/Budgets', label: 'Budgets' },
     { path: '/Incomes', label: 'Incomes' },
     { path: '/Contact', label: 'Contact' },
+
 
   ];
 
